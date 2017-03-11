@@ -6,18 +6,51 @@
 }
 .container{
   border: 5px dashed blue;
-
 }
-img{
+@media all and (min-width:420px){
+  .container{
+    max-width: 650px;
+  }
+}
+.small-screen{
+  display:none;
+}
+.big-screen{
 width:92%;
 
 }
 .top, .bottom{
   background-color: #A9A9A9;
 }
+figure {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+  margin-left: 0;
+}
+iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 /*-------------------------------------------------
               Media Queries
 ----------------------------------------------------*/
-@media all and (min-width:800px) and (max-width:1024px){
-  
+@media all and (max-width:420px){
+  .big-screen{
+    display: none;
+  }
+  .small-screen{
+    display:block;
+    width:92%;
+    }
+    .box{
+      display:block;
+      width:auto;
+      border-radius:0;
+    }
 }
