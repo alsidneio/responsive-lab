@@ -1,44 +1,6 @@
-
+.box{
+  background-color: aqua;
+}
 .container{
-  border:1px solid black;
-}
-section, aside{
-  margin:1.858736059%;
-  background-color: green
-}
-@media all and (min-width:420px){
-  .container{
-    max-width: 538px;
-    background-color: #EAEAED;
-  }
-
-section{
-  float:left;
-  width:63.197026%;
-}
-aside{
-  float:right;
-  width:29.3680297%;
-}
-/*-------------------------------------------------------
- iframe styling
----------------------------------------------------------*/
-figure{
-  height:0;
-  padding-bottom:56.25%;
-  position: relative;
-  width: 100%;
-}
-iframe{
-height: 100%;
-left:0;
-position: absolute;
-top:0;
-width:100%;
-}
-
-/*@media rule*/
-
-img, video, canvas{
-  max-width: 100%;
+  border: 5px dashed blue ;
 }
